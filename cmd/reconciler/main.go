@@ -25,8 +25,7 @@ func main() {
 			log.Printf("scan error: %v", err)
 		} else if len(changes) > 0 {
 			log.Printf("drift detected: %d files — reconciling", len(changes))
-			// TODO: git checkout + apply
-		}
+					}
 		time.Sleep(*interval)
 	}
 }
